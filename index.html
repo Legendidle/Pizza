@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+  <title>Document</title>
+</head>
+<body>
+  <main>
+    <section class="order">
+      <div class="container-md">
+        <div class="order__inner text-center p-5 mt-5 pt-3 rounded-4 bg-success">
+          <h1 class="order__title mt-5">
+            Order a pizza
+          </h1>
+
+          <form class="order__from mt-5 row" method="post" action="https://echo.htmlacademy.ru">
+            <div class="order__box-quest col-7 d-flex flex-column">
+              <label class="label d-flex flex-column w-50 fw-bold mb-5 align-self-start text-start">
+                What kind of bread do you want?
+                <select class="select mt-3" name="form__select">
+                </select>
+              </label>
+              
+              <div class="align-self-start form__radio">
+                <p class="fw-bold text-start">
+                  Choose size of bread:
+                </p>
+              </div>
+
+              <div class="align-self-start form__check row mt-5">
+                <p class="fw-bold text-start">
+                  Choose ingredients of pizza:
+                </p>
+              </div>
+            </div>
+
+            <div class="order__box-answer col-5">
+              <span class="h5 d-inline-block mb-2">Bread:</span>
+
+              <div class="order__result fs-4 mb-2"></div>
+  
+              <span class="h5 d-inline-block mb-2">Size:</span>
+  
+              <div class="order__result-size fs-4 mb-2"></div>
+  
+              <span class="h5 d-inline-block mb-2">
+                Ingredients:
+              </span>
+  
+              <div class="order__result-ing mb-5 mt-2 fs-4" ></div>
+              <button type="submit" class="btn btn-primary mt-5">
+                Order
+              </button>
+
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+
+
+  <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>
